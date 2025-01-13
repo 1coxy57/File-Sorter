@@ -62,13 +62,13 @@ fn sort_item(item_path: &str, _path: &str) -> bool {
                     }
                 }
 
-                let dest_file_path = format!("{}/{}", dest_folder, file);
+                let dest_fp = format!("{}/{}", dest_folder, file);
 
-                if let Err(e) = fs::write(&dest_file_path, &file) {
+                if let Err(e) = fs::write(&dest_fp, &file) {
                     return false;
                 }
 
-                if let Err(e) = copy_to(fp.to_str().unwrap(), &dest_file_path) {
+                if let Err(e) = copy_to(fp.to_str().unwrap(), &dest_fp) {
                     return false;
                 }
             }
