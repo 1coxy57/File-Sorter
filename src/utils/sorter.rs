@@ -27,12 +27,12 @@ fn exists(dir: &str) -> bool {
 }
 
 fn copy_to(src: &str, dest: &str) -> io::Result<()> {
-    let mut src_file = File::open(src)?;
+    let mut src_ = File::open(src)?;
     let mut contents = Vec::new();
-    src_file.read_to_end(&mut contents)?;
+    src_.read_to_end(&mut contents)?;
 
-    let mut dest_file = File::create(dest)?;
-    dest_file.write_all(&contents)?;
+    let mut dest_ = File::create(dest)?;
+    dest_.write_all(&contents)?;
 
     Ok(())
 }
