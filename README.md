@@ -17,7 +17,7 @@ git clone https://github.com/1coxy57/File-Sorter.git
 ```
 2. Build the **project**:
 ```bash
-cargo build --release
+cargo build
 ```
 3. Run the **project**: 
 ```bash
