@@ -13,7 +13,7 @@ A simple file sorter in rust that organizes your files from a folder to (A-Z).
 
 1. Clone the **repository**:
 ```bash
-cargo build 
+git clone https://github.com/1coxy57/File-Sorter.git
 ```
 2. Build the **project**:
 ```bash
