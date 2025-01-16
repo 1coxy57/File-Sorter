@@ -7,7 +7,7 @@ A simple file sorter in rust that organizes your files from a folder to (A-Z).
 ### Prerequisites
 
 - [Rust](https://www.rust-lang.org/learn/get-started) must be installed on the operating system.
-- Cannot be a dumbass
+- Follow the installation below after:
 
 ### Installation
 
